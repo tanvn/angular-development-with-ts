@@ -15,7 +15,7 @@ import {CustomPreloadingStrategy} from "./custom.preloader";
       {path: 'product', component: ProductDetailComponent},
 
       {path: 'luxury', loadChildren: () => import('./luxury.module').then(m => m.LuxuryModule), data: {preloadme:true} } ]
-//      , {preloadingStrategy: CustomPreloadingStrategy}
+     , {preloadingStrategy: CustomPreloadingStrategy}
       )
   ],
   declarations: [ AppComponent, HomeComponent, ProductDetailComponent],
